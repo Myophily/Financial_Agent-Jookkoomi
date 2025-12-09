@@ -48,8 +48,8 @@ Get your first analysis running in 10 minutes:
 
 ```bash
 # 1. Clone and setup
-git clone <your-repo-url>
-cd jookkoomi-public
+git clone https://github.com/Myophily/Financial_Agent-Jookkoomi.git
+cd jFinancial_Agent-Jookkoomi
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -82,8 +82,8 @@ python main.py AAPL
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd jookkoomi-public
+   git clone https://github.com/Myophily/Financial_Agent-Jookkoomi.git
+   cd Financial_Agent-Jookkoomi
    ```
 
 2. **Create virtual environment**
@@ -953,15 +953,17 @@ cat monitoring_logs/$(ls -t monitoring_logs/ | head -1)
 | `GMAIL_USER`           | ✅ Yes         | Email sender                   |
 | `GMAIL_APP_PASSWORD`   | ✅ Yes         | Email authentication           |
 | `RECIPIENT_EMAILS`     | ✅ Yes         | Report recipients              |
-| `REDDIT_CLIENT_ID`     | ⚠️ Recommended | Social sentiment               |
-| `REDDIT_CLIENT_SECRET` | ⚠️ Recommended | Social sentiment               |
-| `ECOS_API_KEY`         | ⚠️ Recommended | Korean macro data              |
+| `REDDIT_CLIENT_ID`     | ⭕ Optional    | Social sentiment               |
+| `REDDIT_CLIENT_SECRET` | ⭕ Optional    | Social sentiment               |
+| `ECOS_API_KEY`         | ⭕ Optional    | Korean macro data              |
 | `FMP_API_KEY`          | ⚠️ Recommended | Enhanced financials            |
-| `TAVILY_API_KEY`       | ⭕ Optional    | Web search                     |
+| `TAVILY_API_KEY`       | ⚠️ Recommended | Web search                     |
 | `MONITOR_FULL_CONTENT` | ⭕ Optional    | Log detail level               |
 
 ---
 
 **Built with LangGraph, powered by Gemini 2.5 Pro**
 
-For questions or support, please open an issue in the repository.
+---
+
+Made by Myophily, Assisted by Claude sonnet 4.5, 2025
