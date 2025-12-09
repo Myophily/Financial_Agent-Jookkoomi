@@ -1,0 +1,47 @@
+# requirements.txt
+
+python-dotenv
+setuptools           # pykrx의 의존성인 'pkg_resources'를 제공합니다.
+
+# Core LangGraph/LangChain Framework
+langgraph
+langchain
+langchain-community     # Required for WebBaseLoader (article scraping fallback)
+beautifulsoup4          # Required by WebBaseLoader for HTML parsing
+requests                # For HTTP requests with custom headers
+playwright              # For dynamic content loading (WebBaseLoader fallback)
+
+# Data Processing
+pandas                  # Essential for data manipulation (used by yfinance, pandas-datareader)
+lxml                    # XML/HTML processing library (often required by pandas/bs4)
+
+# Google Gemini API
+langchain-google-genai
+
+# OpenAI-compatible API (더 이상 사용하지 않음 - LM Studio)
+# langchain-openai
+
+# Agent Tools
+tavily-python     # For Tavily Search API
+firecrawl-py      # For website scraping
+yfinance          # For Yahoo Finance data
+pykrx             # For Korean stock market data
+ta                # For technical analysis indicators
+pandas-datareader # For FRED economic data access
+
+# News scraping tools
+GoogleNews              # For Google News search API
+newspaper3k             # For article content extraction
+lxml_html_clean         # Required by newspaper3k for Python 3.13+
+
+# Market Sentiment Analysis Tools
+finvizfinance        # Stock news, insider trading data
+fear-and-greed       # CNN Fear & Greed Index
+praw                 # Reddit API wrapper for social media sentiment
+# nasdaq-data-link removed - replaced with yfinance institutional data (no API key needed)
+
+# Reporting Tools
+markdown-pdf      # To convert markdown to PDF
+
+# Consumer Trends Analysis
+pytrends          # Google Trends API for consumer interest tracking
